@@ -845,14 +845,9 @@ export default function Home() {
             ].map((member, index) => (
               <StaggerItem key={index}>
                 <div className="group relative bg-neutral-900/60 rounded-2xl p-5 border border-neutral-800 hover:border-violet-500/30 transition-colors duration-300">
-                  <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-neutral-900">
+                  <div className="relative aspect-video rounded-xl overflow-hidden bg-neutral-900">
                     {/* @ts-expect-error - Wistia web component */}
                     <wistia-player media-id={member.wistiaId} aspect="1.7777777777777777" className="absolute inset-0 w-full h-full"></wistia-player>
-                  </div>
-                  <div className="text-left">
-                    <div className="font-display font-bold text-white group-hover:text-violet-300 transition-colors">{member.name}</div>
-                    <div className="text-sm text-violet-400">{member.role}</div>
-                    <div className="text-xs text-neutral-500">{member.location}</div>
                   </div>
                 </div>
               </StaggerItem>
