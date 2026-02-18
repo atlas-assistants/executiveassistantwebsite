@@ -806,7 +806,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScaleBlurReveal className="text-center mb-16 sm:mb-20">
             <p className="text-sm font-display font-bold text-violet-400 uppercase tracking-widest mb-6">Real Humans, Real Stories</p>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-white">
               They could work anywhere.
               <br />
               <span className="text-violet-400">They chose Atlas.</span>
@@ -894,7 +894,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="relative font-display text-[120px] sm:text-[180px] md:text-[220px] font-black text-white tracking-tighter leading-none"
+                className="relative font-display text-[80px] sm:text-[140px] md:text-[180px] lg:text-[220px] font-black text-white tracking-tighter leading-none"
               >
                 1
               </motion.span>
@@ -903,7 +903,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="relative font-display text-[80px] sm:text-[120px] md:text-[150px] font-black text-teal-400 tracking-tighter drop-shadow-[0_0_40px_rgba(20,184,166,0.7)] leading-none"
+                className="relative font-display text-[50px] sm:text-[90px] md:text-[120px] lg:text-[150px] font-black text-teal-400 tracking-tighter drop-shadow-[0_0_40px_rgba(20,184,166,0.7)] leading-none"
               >
                 %
               </motion.span>
@@ -919,8 +919,8 @@ export default function Home() {
             </motion.p>
           </motion.div>
 
-          <div className="bg-neutral-900/50 backdrop-blur-sm rounded-2xl border border-neutral-800 p-8 sm:p-10">
-            <StaggerReveal className="grid grid-cols-3 gap-8 text-center">
+          <div className="bg-neutral-900/50 backdrop-blur-sm rounded-2xl border border-neutral-800 p-6 sm:p-10">
+            <StaggerReveal className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
               {[
                 { value: 100, suffix: "+", label: "EAs on the team" },
                 { value: 20, suffix: "", label: "Countries represented" },
@@ -932,10 +932,10 @@ export default function Home() {
                     transition={{ type: "spring", stiffness: 400, damping: 25 }}
                     className="group cursor-default"
                   >
-                    <div className="text-3xl sm:text-4xl font-display font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">
+                    <div className="text-2xl sm:text-4xl font-display font-bold text-white mb-1 sm:mb-2 group-hover:text-teal-400 transition-colors">
                       {stat.staticValue || <AnimatedCounter value={stat.value!} suffix={stat.suffix} />}
                     </div>
-                    <div className="text-sm text-neutral-500 group-hover:text-neutral-400 transition-colors">{stat.label}</div>
+                    <div className="text-xs sm:text-sm text-neutral-500 group-hover:text-neutral-400 transition-colors">{stat.label}</div>
                   </motion.div>
                 </StaggerItem>
               ))}
@@ -974,7 +974,7 @@ export default function Home() {
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal className="text-center mb-16 sm:mb-20">
               <p className="text-sm font-display font-bold text-teal-600 uppercase tracking-widest mb-6">A Day in the Life</p>
-              <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-900 mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 mb-6">
                 Become their{" "}
                 <span className="text-teal-600">right hand.</span>
               </h2>
@@ -1070,7 +1070,7 @@ export default function Home() {
         <section id="training" className="py-20 sm:py-28 lg:py-32 bg-white scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal className="text-center mb-16">
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-neutral-900">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-neutral-900">
                 More training to become{" "}
                 <span className="text-teal-600">irreplaceable.</span>
               </h2>
@@ -1166,7 +1166,7 @@ export default function Home() {
         <section id="compensation" className="py-20 sm:py-28 lg:py-32 bg-gradient-to-b from-white to-teal-50/50 scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal className="text-center mb-16">
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-neutral-900 mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-neutral-900 mb-6">
                 $1,500 to $3,000+/month.{" "}
                 <span className="text-teal-600">Transparent.</span>
               </h2>
@@ -1183,7 +1183,7 @@ export default function Home() {
               ].map((tier, index) => (
                 <StaggerItem key={index}>
                   <ElevateCard>
-                    <div className={`group relative h-full rounded-2xl p-8 text-center transition-all duration-300 bg-white shadow-sm ${
+                    <div className={`group relative h-full rounded-2xl p-6 sm:p-8 text-center transition-all duration-300 bg-white shadow-sm ${
                       tier.featured
                         ? 'border-2 border-teal-500'
                         : 'border border-neutral-200 hover:border-teal-200'
@@ -1256,7 +1256,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal>
               <div className="flex flex-col items-center text-center">
-                <blockquote className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium text-white leading-[1.1] tracking-tight mb-16 max-w-5xl">
+                <blockquote className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[1.15] tracking-tight mb-12 sm:mb-16 max-w-5xl">
                   <span className="text-neutral-400">"</span>Most companies hire assistants.{" "}
                   <span className="text-teal-400">We build careers.</span><span className="text-neutral-400">"</span>
                 </blockquote>
@@ -1295,7 +1295,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal className="text-center mb-16">
               <p className="text-sm font-display font-bold text-teal-400 uppercase tracking-widest mb-6">What We Look For</p>
-              <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4">
                 Do you have{" "}
                 <span className="text-teal-400">what it takes?</span>
               </h2>
@@ -1338,7 +1338,7 @@ export default function Home() {
             <ScaleBlurReveal delay={0.2}>
               <div className="bg-neutral-800/50 backdrop-blur-sm rounded-2xl border border-neutral-700/50 p-6 max-w-2xl mx-auto">
                 <p className="text-sm font-display font-semibold text-teal-400 uppercase tracking-wider mb-4">Requirements</p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-sm">
                   <div className="flex items-center gap-3 text-neutral-300">
                     <div className="w-6 h-6 rounded-full bg-teal-500/20 flex items-center justify-center flex-shrink-0">
                       <svg className="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1406,7 +1406,7 @@ export default function Home() {
                 </motion.span>
                 We're hiring now
               </motion.p>
-              <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight text-neutral-900 mb-6">
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-neutral-900 mb-6">
                 This could be{" "}
                 <span className="text-teal-600">your launchpad.</span>
               </h2>
@@ -1417,7 +1417,7 @@ export default function Home() {
                 href="https://careers.atlasassistants.com/jobs/4985570-executive-assistant-fully-remote-global/applications/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-lift inline-flex items-center justify-center px-14 py-6 rounded-full bg-teal-500 text-white font-display font-bold text-xl sm:text-2xl shadow-2xl shadow-teal-500/40"
+                className="btn-lift inline-flex items-center justify-center px-8 sm:px-14 py-5 sm:py-6 rounded-full bg-teal-500 text-white font-display font-bold text-lg sm:text-2xl shadow-2xl shadow-teal-500/40"
                 whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(20, 184, 166, 0.5)" }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -1449,7 +1449,7 @@ export default function Home() {
         <section className="py-16 sm:py-20 bg-gradient-to-b from-teal-50/30 to-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <ScaleBlurReveal>
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-4">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 mb-4">
                 Not ready yet?
               </h2>
               <p className="text-neutral-600 mb-8 max-w-xl mx-auto">

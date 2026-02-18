@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope, Inter, JetBrains_Mono, Playfair_Display, Cormorant_Garamond, Space_Grotesk, Outfit, DM_Serif_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -60,6 +60,13 @@ const fontLuxury = DM_Serif_Display({
   display: "swap",
   weight: ["400"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export const metadata: Metadata = {
   title: "Join Atlas | Where A-Players Become Legendary EAs",
