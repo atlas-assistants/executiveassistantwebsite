@@ -386,7 +386,7 @@ function NewsletterForm() {
         disabled={isSubmitting}
         className="btn-lift px-8 py-4 rounded-full bg-teal-500 text-white font-display font-bold hover:bg-teal-600 disabled:opacity-50 whitespace-nowrap text-base shadow-lg shadow-teal-500/25"
       >
-        {isSubmitting ? "Sending..." : "Get the playbooks"}
+        {isSubmitting ? "Joining..." : "Get the edge"}
       </button>
     </form>
   );
@@ -1450,10 +1450,10 @@ export default function Home() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <ScaleBlurReveal>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 mb-4">
-                Not ready yet?
+                Get the unfair advantage.
               </h2>
               <p className="text-neutral-600 mb-8 max-w-xl mx-auto">
-                Join thousands of EAs getting our bi-weekly playbook. One actionable framework every other Monday.
+                The strategies top EAs use to become indispensable—delivered to your inbox every other Monday. Free.
               </p>
               {/* Form floats free - no container */}
               <NewsletterForm />
