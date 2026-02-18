@@ -556,7 +556,7 @@ export default function Home() {
 
         <motion.div
           style={{ opacity: heroOpacity, scale: heroScale, y: heroY }}
-          className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 text-center"
+          className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 text-center"
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -566,12 +566,12 @@ export default function Home() {
           >
             {/* Hero Headline - Stacked, all white */}
             <div className="overflow-hidden px-2">
-              <h1 className="font-display text-[18vw] sm:text-[14vw] md:text-[11vw] lg:text-[9vw] font-extrabold uppercase tracking-tighter leading-[0.85] text-white">
+              <h1 className="font-display text-[13vw] sm:text-[12vw] md:text-[10vw] lg:text-[9vw] font-extrabold uppercase tracking-tighter leading-[0.9] text-white">
                 <TextReveal text="Land your" delay={0.5} />
               </h1>
             </div>
             <div className="overflow-hidden px-2">
-              <h1 className="font-display text-[18vw] sm:text-[14vw] md:text-[11vw] lg:text-[9vw] font-extrabold uppercase tracking-tighter leading-[0.85] text-white">
+              <h1 className="font-display text-[11vw] sm:text-[11vw] md:text-[9vw] lg:text-[8vw] font-extrabold uppercase tracking-tighter leading-[0.9] text-white">
                 <TextReveal text="Dream EA job" delay={1.0} />
               </h1>
             </div>
@@ -581,7 +581,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-8 sm:mt-10 text-xl sm:text-2xl md:text-3xl text-neutral-400 max-w-3xl mx-auto leading-snug font-body"
+              className="mt-6 sm:mt-10 text-base sm:text-xl md:text-2xl lg:text-3xl text-neutral-400 max-w-3xl mx-auto leading-relaxed font-body px-2"
             >
               We train ambitious EAs to support <span className="text-white font-semibold">high-growth founders</span>—elite training, AI tools, career growth.
             </motion.p>
@@ -591,13 +591,13 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.2, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-10 sm:mt-12 flex flex-col sm:flex-row gap-4 justify-center"
+              className="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full px-4 sm:px-0"
             >
               <a
                 href="https://careers.atlasassistants.com/jobs/4985570-executive-assistant-fully-remote-global/applications/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-lift inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-neutral-900 font-display font-bold text-lg hover:bg-neutral-100 shadow-xl shadow-white/10"
+                className="btn-lift inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white text-neutral-900 font-display font-bold text-base sm:text-lg hover:bg-neutral-100 shadow-xl shadow-white/10"
               >
                 Start your application
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -610,7 +610,7 @@ export default function Home() {
                   e.preventDefault();
                   document.getElementById("compensation")?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-display font-semibold text-neutral-400 hover:text-white transition-colors"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 text-base sm:text-lg font-display font-semibold text-neutral-400 hover:text-white transition-colors"
               >
                 See what you'll earn
                 <motion.svg
