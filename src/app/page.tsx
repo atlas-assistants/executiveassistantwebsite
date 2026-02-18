@@ -566,12 +566,9 @@ export default function Home() {
           >
             {/* Hero Headline - Stacked, all white */}
             <div className="overflow-hidden px-2">
-              <h1 className="font-display text-[13vw] sm:text-[12vw] md:text-[10vw] lg:text-[9vw] font-extrabold uppercase tracking-tighter leading-[0.9] text-white">
+              <h1 className="font-display text-[12vw] sm:text-[11vw] md:text-[9.5vw] lg:text-[8.5vw] font-extrabold uppercase tracking-tighter leading-[0.9] text-white">
                 <TextReveal text="Land your" delay={0.5} />
-              </h1>
-            </div>
-            <div className="overflow-hidden px-2">
-              <h1 className="font-display text-[11vw] sm:text-[11vw] md:text-[9vw] lg:text-[8vw] font-extrabold uppercase tracking-tighter leading-[0.9] text-white">
+                <br />
                 <TextReveal text="Dream EA job" delay={1.0} />
               </h1>
             </div>
@@ -1453,7 +1450,7 @@ export default function Home() {
                 Get the unfair advantage.
               </h2>
               <p className="text-neutral-600 mb-8 max-w-xl mx-auto">
-                The strategies top EAs use to become indispensable—delivered to your inbox every other Monday. Free.
+                The strategies top EAs use to become indispensable. Delivered to your inbox every other Monday. Free.
               </p>
               {/* Form floats free - no container */}
               <NewsletterForm />
