@@ -1056,7 +1056,7 @@ export default function Home() {
                 <div className="mt-16 sm:mt-20 text-center">
                   <p className="font-display text-xl sm:text-2xl text-neutral-500 max-w-2xl mx-auto">
                     This isn't task work. This is{" "}
-                    <span className="text-neutral-900 font-semibold">becoming indispensable.</span>
+                    <span className="text-neutral-900 font-semibold">becoming a strategic partner.</span>
                   </p>
                 </div>
               </ScaleBlurReveal>
@@ -1167,7 +1167,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScaleBlurReveal className="text-center mb-16">
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-neutral-900 mb-6">
-                $1,500 to $3,000+/month.{" "}
+                $1,200 to $2,000+/month.{" "}
                 <span className="text-teal-600">Transparent.</span>
               </h2>
               <p className="text-xl text-neutral-500 max-w-2xl mx-auto">
@@ -1177,9 +1177,9 @@ export default function Home() {
 
             <StaggerReveal className="grid sm:grid-cols-3 gap-6 sm:gap-8 mb-12">
               {[
-                { level: "Junior", salary: "$1,500 - $2,000", desc: "Entry-level EA experience", featured: false },
-                { level: "Mid-Level", salary: "$2,000 - $2,500", desc: "Proven EA track record", featured: true },
-                { level: "Senior", salary: "$2,500 - $3,000+", desc: "Executive-level expertise", featured: false },
+                { level: "Junior", salary: "$1,200 - $1,300", desc: "Entry-level EA experience", featured: false },
+                { level: "Mid-Level", salary: "$1,300 - $1,900", desc: "Proven EA track record", featured: true },
+                { level: "Senior", salary: "$1,900 - $2,000+", desc: "Executive-level expertise", featured: false },
               ].map((tier, index) => (
                 <StaggerItem key={index}>
                   <ElevateCard>
@@ -1209,7 +1209,7 @@ export default function Home() {
                   { title: "40 hrs/week", desc: "Full-time" },
                   { title: "10 PTO days", desc: "+ sick leave" },
                   { title: "7 holidays", desc: "4 major + 3 yours" },
-                  { title: "Bonuses", desc: "Performance rewards" },
+                  { title: "Bonuses", desc: "Not guaranteed" },
                 ].map((item, index, arr) => (
                   <div key={index} className="flex items-center gap-8 sm:gap-12">
                     <motion.div
