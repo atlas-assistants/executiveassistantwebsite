@@ -789,6 +789,58 @@ export default function Home() {
       </section>
 
       {/* ========================================
+          CEO Quote Section - Core Positioning
+          ======================================== */}
+      <section className="relative py-20 sm:py-28 lg:py-32 bg-neutral-900 overflow-hidden">
+        {/* Morphing blob background */}
+        <MorphingBlob
+          className="top-1/4 left-1/3 w-[600px] h-[600px]"
+          color="teal"
+        />
+
+        {/* Decorative quote marks - animated */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+          whileInView={{ opacity: 0.1, scale: 1, rotate: 0 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          viewport={{ once: true }}
+          className="absolute top-12 left-8 sm:left-16 lg:left-24"
+        >
+          <svg className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 text-teal-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+        </motion.div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScaleBlurReveal>
+            <div className="flex flex-col items-center text-center">
+              <blockquote className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[1.15] tracking-tight mb-12 sm:mb-16 max-w-5xl">
+                <span className="text-neutral-400">"</span>Most companies hire assistants.{" "}
+                <span className="text-teal-400">We build careers.</span><span className="text-neutral-400">"</span>
+              </blockquote>
+
+              <div className="flex items-center gap-5">
+                <div className="relative w-20 h-20">
+                  <div className="absolute inset-0 rounded-full bg-teal-500/30 blur-xl scale-150" />
+                  <Image
+                    src="/colin-pal.jpg"
+                    alt="Colin Pal, CEO"
+                    width={80}
+                    height={80}
+                    className="relative w-full h-full rounded-full object-cover ring-2 ring-teal-500/50 shadow-2xl"
+                  />
+                </div>
+                <div className="text-left">
+                  <p className="font-display text-xl font-bold text-white">Colin Pal</p>
+                  <p className="text-teal-400 font-medium">CEO, Atlas Assistants</p>
+                </div>
+              </div>
+            </div>
+          </ScaleBlurReveal>
+        </div>
+      </section>
+
+      {/* ========================================
           Team Section - Social Proof + 1% Reveal
           Merged flow: Testimonials → Bridge → Punchline → Stats
           ======================================== */}
@@ -1231,58 +1283,6 @@ export default function Home() {
         </section>
 
         {/* ========================================
-            CEO Quote Section - Signature Moment
-            ======================================== */}
-        <section className="relative py-24 sm:py-32 lg:py-40 bg-neutral-900 overflow-hidden">
-          {/* Morphing blob background */}
-          <MorphingBlob
-            className="top-1/4 left-1/3 w-[600px] h-[600px]"
-            color="teal"
-          />
-
-          {/* Decorative quote marks - animated */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-            whileInView={{ opacity: 0.1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            viewport={{ once: true }}
-            className="absolute top-12 left-8 sm:left-16 lg:left-24"
-          >
-            <svg className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 text-teal-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
-          </motion.div>
-
-          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScaleBlurReveal>
-              <div className="flex flex-col items-center text-center">
-                <blockquote className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-[1.15] tracking-tight mb-12 sm:mb-16 max-w-5xl">
-                  <span className="text-neutral-400">"</span>Most companies hire assistants.{" "}
-                  <span className="text-teal-400">We build careers.</span><span className="text-neutral-400">"</span>
-                </blockquote>
-
-                <div className="flex items-center gap-5">
-                  <div className="relative w-20 h-20">
-                    <div className="absolute inset-0 rounded-full bg-teal-500/30 blur-xl scale-150" />
-                    <Image
-                      src="/colin-pal.jpg"
-                      alt="Colin Pal, CEO"
-                      width={80}
-                      height={80}
-                      className="relative w-full h-full rounded-full object-cover ring-2 ring-teal-500/50 shadow-2xl"
-                    />
-                  </div>
-                  <div className="text-left">
-                    <p className="font-display text-xl font-bold text-white">Colin Pal</p>
-                    <p className="text-teal-400 font-medium">CEO, Atlas Assistants</p>
-                  </div>
-                </div>
-              </div>
-            </ScaleBlurReveal>
-          </div>
-        </section>
-
-        {/* ========================================
             Standards Section
             ======================================== */}
         <section id="requirements" className="relative py-20 sm:py-28 lg:py-32 bg-neutral-900 scroll-mt-20 overflow-hidden">
@@ -1453,7 +1453,7 @@ export default function Home() {
                 Not ready yet?
               </h2>
               <p className="text-neutral-600 mb-8 max-w-xl mx-auto">
-                Join thousands of EAs getting our weekly playbook. One actionable framework every Thursday.
+                Join thousands of EAs getting our bi-weekly playbook. One actionable framework every other Monday.
               </p>
               {/* Form floats free - no container */}
               <NewsletterForm />
